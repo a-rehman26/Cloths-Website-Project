@@ -13,8 +13,131 @@
     <!-- bootstrap link  download -->
     <link rel="stylesheet" href="css/bootstrap.css" />
 
+    <!-- font family cdn -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Days+One&family=IBM+Plex+Serif&family=Lato&family=Montserrat:ital@1&family=Noto+Serif&family=Oranienbaum&family=Poppins&family=Roboto:ital@1&family=Signika+Negative&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- style.css  -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- header top   -->
+    <div class="header-main-div">
+      <div class="header-left-div">
+        <p>Free shipping for standard order over $100</p>
+      </div>
+      <div class="header-right-div-main">
+        <div class="header-right-div-box">
+          <a href="#" class="header-right-link">Help & FAQ'S</a>
+        </div>
+        <div class="header-right-div-box">
+          <a href="#" class="header-right-link">My Account</a>
+        </div>
+        <div class="header-right-div-box">
+          <a href="#" class="header-right-link">EN</a>
+        </div>
+        <div class="header-right-div-box">
+          <a href="#" class="header-right-link header-right-link-last-child"
+            >USD</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar  -->
+    <div class="navbar-main-div">
+      <div class="nav-logo-div">
+        <h1>AL Rehman Store</h1>
+      </div>
+      <div class="nav-div-main">
+        <ol class="navs-tag-ol">
+          <li><a href="#" class="nav-linktag">Home</a></li>
+          <li><a href="#" class="nav-linktag">Shop</a></li>
+          <li><a href="#" class="nav-linktag">Features</a></li>
+          <li><a href="#" class="nav-linktag">Blog</a></li>
+          <li><a href="#" class="nav-linktag">About</a></li>
+          <li><a href="#" class="nav-linktag">Contact</a></li>
+        </ol>
+      </div>
+      <div class="nav-right-div-mian">
+        <div class="nav-right-box-div">
+          <div class="nav-search-div-right" id="navSearchright">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="hide-search-main-div" id="hideSearchdiv">
+            <div class="hide-search-div-main">
+              <div class="hide-search-icon-div" id="hidesearchinputicon">
+                <i class="fa-solid fa-xmark hide-search-close"></i>
+              </div>
+              <div class="search-input-hide">
+                <input
+                  type="search"
+                  name=""
+                  id="searchNav"
+                  placeholder="Search here ..."
+                />
+                <div class="hide-icon-close-div">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-right-box-div">
+          <i
+            class="fa-solid fa-cart-shopping nav-icon-cart"
+            id="cartShoppingnav"
+          ></i>
+          <div class="hide-cart-div-main" id="hideCartdiv">
+            <div class="hide-cart-content-flex">
+              <p>Your Cart</p>
+              <i class="fa-solid fa-xmark" id="cartCloseicon"></i>
+            </div>
+            <div class="nav-hide-cart-flex-div">
+              <div class="nav-cart-hide-content-box-div">
+                <img src="images/item-cart-01.jpg" alt="" />
+                <div class="cart-nav-box-content-div">
+                  <p>Black Shoes</p>
+                  <p>$24</p>
+                </div>
+              </div>
+              <div class="nav-cart-hide-content-box-div">
+                <img src="images/item-cart-02.jpg" alt="" />
+                <div class="cart-nav-box-content-div">
+                  <p>Leather Watch</p>
+                  <p>$17</p>
+                </div>
+              </div>
+              <div class="hide-cart-content-total-price">
+                <h1>Total:</h1>
+                <span>$41</span>
+              </div>
+            </div>
+            <div class="btn-cart-hide-nav-div">
+              <button>View Cart</button>
+              <button>Checkout</button>
+            </div>
+          </div>
+        </div>
+        <div class="nav-right-box-div">
+          <i
+            class="fa-regular fa-heart nav-icon-heart"
+            id="wishlistNav"
+            onclick="wishNav()"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="jquery.js"></script>
+
+    <!-- jquery link home work  -->
+    <script src="jquery home.js"></script>
+
+    <!-- javascript  -->
+    <script src="javscript.js"></script>
+  </body>
 </html>
