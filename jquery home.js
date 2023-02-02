@@ -1,6 +1,7 @@
 // hide search navbar 
 
 $(document).ready(function () {
+
     $("#navSearchright").click(function () {
         $("#hideSearchdiv").fadeIn(function () {
             $("#hideSearchdiv").css("display", "block");
