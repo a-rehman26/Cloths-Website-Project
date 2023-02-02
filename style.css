@@ -76,6 +76,7 @@ html {
     z-index: 999;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -193,6 +194,10 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.icons-hide-res-div {
+    display: none;
 }
 
 

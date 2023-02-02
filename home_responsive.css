@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 442px) {
+    html {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* header  */
+
+    .header-main-div {
+        width: 100%;
+        height: 15vh;
+        background-color: #222;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 999;
+    }
+
+    .header-left-div {
+        height: 6vh;
+        display: flex;
+        justify-content: center;
+        /* align-items: end; */
+    }
+
+    .header-left-div p {
+        color: lightgray;
+        font-size: 1rem;
+        font-family: 'Lato', sans-serif;
+        padding: 6px 0;
+    }
+
+    .header-right-div-main {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        /* border-left: 1px solid lightgray; */
+        border: none;
+        /* border-right: 1px solid lightgray; */
+        height: 8vh;
+    }
+
+    .header-right-div-box a {
+        height: 8vh;
+        /* border-right: 1px solid lightgray; */
+        border: none;
+        display: block;
+        text-decoration: none;
+        color: lightgray;
+        font-family: 'Poppins', sans-serif;
+        padding: 15px 12px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    /* navbar  */
+
+    .icons-hide-res-div {
+        display: block;
+    }
+
+    .icons-hide-res-div .menuiconNav {
+        display: block;
+        font-size: 35px;
+        color: lightgray;
+        cursor: pointer;
+        margin: 15px 0 0 0;
+    }
+
+    .nav-logo-div h1 {
+        font-size: 1.4rem;
+        font-family: 'Bree Serif', serif;
+        font-weight: 600;
+        cursor: pointer;
+        color: lightgray;
+    }
+
+    .navbar-main-div {
+        width: 100%;
+        height: 16vh;
+        background: #222;
+        position: relative;
+        z-index: 999;
+        border-top: 1px solid gray;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-div-main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: dimgray;
+
+        display: flex;
+        flex-direction: column;
+        /* justify-content: left; */
+        /* align-items: center; */
+
+        z-index: 999;
+        transform: translateX(-150%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .activeNavbarRes .nav-div-main {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .activeNavbarRes .closeiconNav {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        z-index: 999;
+        font-size: 45px;
+        color: lightgray;
+    }
+
+    .activeNavbarRes .menuiconNav {
+        display: none;
+    }
+
+    .navs-tag-ol {
+        display: flex;
+        flex-direction: column;
+        margin: 55px 20px;
+    }
+
+
+
+    /* hide search  */
+
+    .hide-search-main-div {
+        display: none;
+    }
+
+    .hide-search-div-main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        height: 94vh;
+        background-color: whitesmoke;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .search-input-hide {
+        width: 75%;
+        height: 65px;
+        cursor: pointer;
+        border: 2px solid darkgray;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hide-search-icon-div {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 70%;
+        height: 8vh;
+    }
+
+
+    /* hide cart  */
+
+    .hide-cart-div-main {
+        width: 65%;
+        height: 94vh;
+        z-index: 999;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        transform: translateX(150%);
+        transition: all 0.3s ease-in-out;
+        /* display: none; */
+    }
+
+    .btn-cart-hide-nav-div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-cart-hide-nav-div button {
+        width: 60%;
+        height: 45px;
+        cursor: pointer;
+        border: 1px solid #222;
+        background-color: #222;
+        color: white;
+        border-radius: 25px;
+        font-size: 1.1rem;
+        padding: 1px;
+        margin: 10px 5px;
+    }
+
+    /* bg image for home  */
+
+    #bgimage {
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5) url(images/bg\ image\ home.jpg);
+        background-position: 60%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        /* position: absolute; */
+        position: relative;
+        top: 0px;
+    }
+
+    .home-content-main-div {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-content-div p {
+        padding: 0 6px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #222;
+    }
+
+    .home-content-div h1 {
+        font-size: 3.5rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .home-content-div button {
+        width: 45%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        border: 2px solid darkgray;
+        outline: none;
+        padding: 7px;
+        margin: 15px 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: 'Bree Serif', serif;
+        cursor: pointer;
+        border-radius: 25px;
+        color: black;
+        transition: all 0.3s ease;
+    }
+
+    .home-content-div button:hover {
+        background-color: black;
+        color: lightgray;
+        letter-spacing: 1px;
+    }
+
+
+}
