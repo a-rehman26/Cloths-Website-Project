@@ -380,8 +380,8 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
-    position: absolute;
-    top: 39px;
+    position: relative;
+    top: -79px;
 }
 
 .home-content-main-div {
@@ -428,4 +428,110 @@ html {
     background-color: black;
     color: lightgray;
     letter-spacing: 1px;
+}
+
+
+/* cards shop  */
+
+.box-card-shop {
+    /* height: 250px; */
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.box-shop-card-img-div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.box-shop-card-img-div img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-shop-content-div {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.box-shop-content-div h2 {
+    font-weight: 600;
+    font-family: 'Bree Serif', serif;
+    color: #222;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.box-shop-content-div p {
+    color: #222;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hide-box-div-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 999;
+}
+
+.box-card-shop:hover .hide-box-div-content {
+    display: block;
+}
+
+.hide-box-div-content a {
+    position: absolute;
+    bottom: 15px;
+    left: 14px;
+}
+
+.hide-box-div-content-heading {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 999;
+}
+
+.box-card-shop:hover .hide-box-div-content-heading {
+    display: block;
+}
+
+.box-card-shop:hover .box-shop-content-div {
+    display: none;
+}
+
+.hide-box-div-content-heading h2 {
+    font-weight: 600;
+    font-family: 'Bree Serif', serif;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.hide-box-div-content-heading p {
+    color: white;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 50px;
+    left: 14px;
 }
