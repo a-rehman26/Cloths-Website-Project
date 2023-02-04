@@ -642,3 +642,191 @@ html {
     transform-origin: center;
     transition: all 0.1s ease-in-out;
 }
+
+/* product card  */
+
+.box-product-card-div-main {
+    position: relative;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 25px 0;
+}
+
+.box-product-card-img-div {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.box-product-card-img-div img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.box-product-card-div-main:hover .box-product-card-img-div img {
+    transform: scale(1.1);
+}
+
+.box-product-card-content-div p {
+    font-size: 1rem;
+    padding: 5px 0 0 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-product-card-content-div h6 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.hide-box-product-card-content-div {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.4s ease-in-out;
+}
+
+.hide-box-product-card-content-div button {
+    width: 115px;
+    height: 45px;
+    border: 1px solid lightgray;
+    outline: none;
+    border-radius: 25px;
+    padding: 8px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    font-weight: 500;
+    font-family: 'Bree Serif', serif;
+    transform: translateY(150px);
+    transition: all 0.3s ease-in-out;
+}
+
+.hide-box-product-card-content-div button:hover {
+    background-color: #222;
+    color: white;
+    border: 1px solid #222;
+}
+
+.box-product-card-div-main:hover .hide-box-product-card-content-div button {
+    transform: translateY(-10px);
+}
+
+.box-product-card-img-hide-div {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+}
+
+.box-product-card-img-hide-div img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.box-product-card-div-main:hover .box-product-card-img-hide-div img {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* footer  */
+
+.footer-div-main {
+    width: 100%;
+    min-height: 250px;
+    margin: 30px 0 0 0;
+    background-color: #111;
+    position: relative;
+    color: white;
+}
+
+.footer-div-main h2 {
+    color: white;
+    font-size: 2.2rem;
+    font-family: 'Bree Serif', serif;
+    text-transform: uppercase;
+    padding: 50px 0 5px 0;
+    letter-spacing: 1px;
+}
+
+.footer-div-main p {
+    padding: 20px 0 5px 0;
+    font-size: 0.8rem;
+    line-height: 25px;
+    text-align: justify;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.footer-ol-tag {
+    list-style-type: none;
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+.footer-ol-tag li {
+    padding: 2px 0;
+}
+
+.footer-ol-tag a {
+    cursor: pointer;
+    display: block;
+    color: lightgray;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.footer-icon-3-box {
+    display: flex;
+    align-items: baseline;
+}
+
+.icons-footer-div {
+    margin: 0 20px 0 0;
+}
+
+.icons-footer-div i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.email-footer-box {
+    margin: 35px 0 5px 0;
+    cursor: pointer;
+    border-bottom: 1px solid lightgray;
+    background: transparent;
+    color: white;
+}
+
+.email-footer-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.email-footer-btn button {
+    margin: 15px 0;
+    cursor: pointer;
+    border: 1px solid #222;
+    background-color: #333;
+    color: white;
+    border-radius: 25px;
+    width: 125px;
+    height: 52px;
+    font-size: 1.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
