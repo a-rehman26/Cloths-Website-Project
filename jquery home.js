@@ -26,9 +26,6 @@ $(document).ready(function () {
         $("#hideCartdiv").css("transform", "translateX(100%)")
         // })
     })
-
-
-
 });
 
 

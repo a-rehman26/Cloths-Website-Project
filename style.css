@@ -916,6 +916,29 @@ html {
     font-size: 1rem;
 }
 
+.check-eye-pass-icon-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    margin: 0 6px;
+}
+
+.check-eye-pass-icon-div .open-eye {
+    display: none;
+    color: red;
+    font-size: 1.2rem;
+}
+
+.check-eye-pass-icon-div .close-eye {
+    color: #777;
+    font-size: 1.2rem;
+}
+
 .forget-pass-div {
     width: 100%;
     text-align: right;

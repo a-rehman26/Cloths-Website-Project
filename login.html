@@ -67,6 +67,10 @@
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
               />
+              <div class="check-eye-pass-icon-div" onclick="eyeLogin()">
+                <i class="fa-solid fa-eye-slash close-eye" id="closeEye"></i>
+                <i class="fa-solid fa-eye open-eye" id="openEye"></i>
+              </div>
             </div>
             <div class="error-login-form">
               <p id="errorLoginFrm2">*This Field is required</p>

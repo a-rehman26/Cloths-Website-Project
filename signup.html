@@ -47,9 +47,8 @@
                 type="text"
                 name="signUPinpNamenm"
                 id="signUPinpidName"
-                class="form-control"
                 placeholder="Enter Full Name"
-                pattern="[A-Za-z0-9]+"
+                pattern="[A-Za-z0-9 ]+"
                 autocomplete="on"
               />
             </div>
@@ -63,7 +62,6 @@
                 type="email"
                 name="signUPinpNameem"
                 id="signUPinpidEmail"
-                class="form-control"
                 placeholder="Enter Email Address"
                 autocomplete="on"
               />
@@ -73,12 +71,13 @@
             </div>
 
             <label>Password </label> <br />
+
             <div class="user-name-sign-up-div" id="pass-error-brd-clr">
               <input
+                onclick="inp_str()"
                 type="password"
                 name="signUPinpNameps"
                 id="signUPinpidps"
-                class="form-control"
                 placeholder="Enter Password"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
@@ -90,7 +89,7 @@
 
             <div class="password-str-div-sign-up">
               <p>Password Strength:</p>
-              <span>No Password</span>
+              <span id="psStr">No Password</span>
             </div>
 
             <label>Confirm Password</label> <br />
@@ -99,7 +98,6 @@
                 type="password"
                 name="signUPinpNameCps"
                 id="signUPinpidCps"
-                class="form-control"
                 placeholder="Enter Confirm Password"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
@@ -107,6 +105,11 @@
             </div>
             <div class="error-login-form">
               <p id="errorsignUPFrm4">*This Field is required</p>
+            </div>
+            <div class="error-login-form">
+              <p id="errorsMatchignUPFrm3">
+                *Password and Confirm Password Does Not Match
+              </p>
             </div>
 
             <div class="button-and-signin-link-div">
