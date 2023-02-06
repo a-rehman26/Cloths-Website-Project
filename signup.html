@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- bootstrap link  download -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- bootsrap icons cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!-- font family cdn -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Days+One&family=IBM+Plex+Serif&family=Lato&family=Montserrat:ital@1&family=Noto+Serif&family=Oranienbaum&family=Poppins&family=Roboto:ital@1&family=Signika+Negative&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style.css  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- reposnive css  -->
+    <link rel="stylesheet" href="home_responsive.css" />
+  </head>
+  <body>
+    <!-- sign up  -->
+    <div class="sign-up-main-div-bg-clr">
+      <div class="sign-up-content-div">
+        <h2>Sign Up</h2>
+        <p class="sign-up-content-div-p">
+          Create your account to get full access
+        </p>
+        <div class="form-sign-up-main-div">
+          <form name="signUPfrm" onsubmit="return signUP()">
+            <label>Full Name</label> <br />
+            <div class="user-name-sign-up-div" id="name-error-brd-clr">
+              <input
+                type="text"
+                name="signUPinpNamenm"
+                id="signUPinpidName"
+                class="form-control"
+                placeholder="Enter Full Name"
+                pattern="[A-Za-z0-9]+"
+                autocomplete="on"
+              />
+            </div>
+            <div class="error-login-form">
+              <p id="errorsignUPFrm1">*This Field is required</p>
+            </div>
+
+            <label>Email Address </label> <br />
+            <div class="user-name-sign-up-div" id="email-error-brd-clr">
+              <input
+                type="email"
+                name="signUPinpNameem"
+                id="signUPinpidEmail"
+                class="form-control"
+                placeholder="Enter Email Address"
+                autocomplete="on"
+              />
+            </div>
+            <div class="error-login-form">
+              <p id="errorsignUPFrm2">*This Field is required</p>
+            </div>
+
+            <label>Password </label> <br />
+            <div class="user-name-sign-up-div" id="pass-error-brd-clr">
+              <input
+                type="password"
+                name="signUPinpNameps"
+                id="signUPinpidps"
+                class="form-control"
+                placeholder="Enter Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+              />
+            </div>
+            <div class="error-login-form">
+              <p id="errorsignUPFrm3">*This Field is required</p>
+            </div>
+
+            <div class="password-str-div-sign-up">
+              <p>Password Strength:</p>
+              <span>No Password</span>
+            </div>
+
+            <label>Confirm Password</label> <br />
+            <div class="user-name-sign-up-div" id="cPass-error-brd-clr">
+              <input
+                type="password"
+                name="signUPinpNameCps"
+                id="signUPinpidCps"
+                class="form-control"
+                placeholder="Enter Confirm Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+              />
+            </div>
+            <div class="error-login-form">
+              <p id="errorsignUPFrm4">*This Field is required</p>
+            </div>
+
+            <div class="button-and-signin-link-div">
+              <p>
+                Already have an account?<a href="login.html">Sign in</a> here
+              </p>
+              <button id="loginFrmBtn" onclick="BtnLogin()">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="jquery.js"></script>
+
+    <!-- jquery link home work  -->
+    <script src="jquery home.js"></script>
+
+    <!-- javascript  -->
+    <script src="javscript.js"></script>
+  </body>
+</html>

@@ -61,14 +61,42 @@ function formSubF() {
         alert("Login Done")
     }
 
-
-
     // let user_Inp = "abdul11@gmail.com";
     // let user_Pass = "abdulR123";
 
     // if (user === user_Inp && pass === user_Pass) {
     //     alert("Login Done");
     // }
+
+}
+
+
+// signup form required
+
+
+function signUP() {
+    let user_Signup_Name = document.forms["signUPfrm"]["signUPinpNamenm"].value;
+    let user_Signup_Email = document.forms["signUPfrm"]["signUPinpNameem"].value;
+    let user_Signup_Pass = document.forms["signUPfrm"]["signUPinpNameps"].value;
+    let user_Signup_cPass = document.forms["signUPfrm"]["signUPinpNameCps"].value;
+
+    let error_para_one = document.getElementById("errorsignUPFrm1");
+    let error_para_two = document.getElementById("errorsignUPFrm2");
+    let error_para_three = document.getElementById("errorsignUPFrm3");
+    let error_para_four = document.getElementById("errorsignUPFrm4");
+
+    let error_brd_clr_one = document.getElementById("name-error-brd-clr");
+    let error_brd_clr_two = document.getElementById("email-error-brd-clr");
+    let error_brd_clr_three = document.getElementById("pass-error-brd-clr");
+    let error_brd_clr_four = document.getElementById("cPass-error-brd-clr");
+
+    if (user_Signup_Name === "") {
+        error_para_one.style.display = "block";
+        error_brd_clr_one.style.borderColor = "red";
+
+        return false;
+    }
+
 
 
 }
